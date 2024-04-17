@@ -1,12 +1,20 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
 import logo from './logo.svg';
 import './App.scss';
-import { BrowserRouter } from 'react-router-dom';
-
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -20,10 +28,10 @@ function App() {
           >
             Learn React
           </a>
-          
         </header>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
+
 export default App;
