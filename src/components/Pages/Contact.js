@@ -1,12 +1,13 @@
 import React from 'react';
+import Header from '../Header/Header';
 
-const Contact = () => {
-  return (
-    <div>
-      <h1>Accueil</h1>
-      <p>Bienvenue sur la page de contact de notre site.</p>
-    </div>
-  );
-};
+const About = () => {
+    return (
+        <div>
+            <Header />
+            <h1>About Us</h1>
+        </div>
+    );
+}
 
-export default Contact;
+export default About;

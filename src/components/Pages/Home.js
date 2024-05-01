@@ -1,15 +1,20 @@
 import React from 'react';
-import Header from '../Header/index';
+import '../Body/BodyStyle.scss';
+import Header from '../Header/Header';
+import Banner from '../Banner/Banner';
+import Gallery from '../Gallery/Gallery';
+import Footer from '../Footer/Footer';
+
 
 const Home = () => {
-  return (
-    
-    <div>
-      <Header></Header>
-      <h1>Accueil</h1>
-      <p>Bienvenue sur la page d'accueil de notre site.</p>
-    </div>
-  );
-};
+    return (
+        <div >
+            <Header />
+            <Banner />
+            <Gallery/>
+            <Footer/>
+        </div>
+    );
+}
 
 export default Home;

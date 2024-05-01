@@ -1,0 +1,19 @@
+.GalleryCard { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px ;
+    margin: 3%;
+    background-color: red;
+}
+
+.locationTitle {   
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    width: 40%;
+    padding: 1em;
+}
