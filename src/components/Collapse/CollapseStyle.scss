@@ -4,13 +4,25 @@
     margin: 10px;
 }
 
-.CollapseCardStyle{
-    display: flex;
-    justify-content: space-between;
-    background-color: #FF6060;
-    color: white;
-    margin-top: 20px;
-    padding: 1em;
-    border-radius: 5px;
-}
-
+.CollapseCardStyle {
+    cursor: pointer;
+    p {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF6060;
+        color: white;
+        margin-top: 20px;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      &.open {
+        max-height: 100px;
+        transition: max-height 0.3s ease;
+      }
+    }
+  }
+  

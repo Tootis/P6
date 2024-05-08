@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import AppRoutes from './components/Routes/Route';
-import logo from './logo.svg';
+import AppRoutes from './components/Layout/Route';
 import './App.scss';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('Accueil');
+
   return (
     <Router>      
-        <AppRoutes />
-      
+        <AppRoutes currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </Router>
   );
 }

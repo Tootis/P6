@@ -1,12 +1,13 @@
 import React from 'react';
 import './BannerStyle.scss';
 
-
-const Banner = ({children}) => {
+const Banner = ({image, children}) => {
     return (        
         <div className='bannerContainer'>
-             {children}
-            
+            <img src={image} alt="Montagne et récif" className='bannerForm' />
+            <div className='bannerTextContainer'>
+                {children}
+            </div>
         </div>
     );
 }

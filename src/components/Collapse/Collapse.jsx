@@ -6,9 +6,6 @@ const Collapse = () => {
     return (
         <div className='CollapsePosition'>
             <CollapseCard/>
-            <CollapseCard/>
-            <CollapseCard/>
-            <CollapseCard/>
         </div>
     );
 }
