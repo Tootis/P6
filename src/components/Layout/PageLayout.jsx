@@ -6,8 +6,10 @@ import { Outlet } from 'react-router-dom';
 const PageLayout = () => {
     return (
         <>            
-            <Header />
-            <Outlet/>
+            <div className='main'>
+                <Header />
+                <Outlet/>
+            </div>
             <Footer/>
         </>
     );

@@ -16,3 +16,17 @@ footer {
         color: #FFFFFF ;
     }
 }
+
+@media (max-width: 425px) {
+    Footer{
+        margin-top: 0em;
+        .LogoKasa{
+            padding-bottom: 1em;
+        }
+        p { 
+        font-size: 12px;
+        margin: 0em 0em 1em 0em;      
+        padding: 0em 10em 0em 10em
+    }
+    }
+}

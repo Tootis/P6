@@ -1,22 +1,20 @@
 import React, { useState } from 'react';
 import './CollapseStyle.scss';
 
-const CollapseCard = () => {
-  const [open, setOpen] = useState(false);
+const CollapseCard = ({ title, children }) => {
+    const [open, setOpen] = useState(false);
 
-  const toggleCollapse = () => {
-    setOpen(!open);
-  };
+    const toggleCollapse = () => {
+        setOpen(!open);
+    };
 
-  return (
-    <div className={`CollapseCardStyle ${open ? 'open' : ''}`} onClick={toggleCollapse}>
-      <p>Fiabilité</p>
-      <div className={`collapse-content ${open ? 'open' : ''}`}>
-        Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,
-        et toutes les informations sont régulièrement vérifiées par nos équipes.
-      </div>
-    </div>    
-  );
+    return (
+        <div className={`CollapseCardStyle ${open ? 'open' : ''}`}>
+            <p>{title}<i className={`fa-solid fa-chevron-up rotate-button ${open ? 'up' : 'down'}`} onClick={toggleCollapse}></i></p>
+            <div className={`collapse-content ${open ? 'open' : ''}`}>
+                {children}
+            </div>
+        </div>    
+    );
 };
-
 export default CollapseCard;

@@ -2,9 +2,18 @@
     display: flex;
     flex-direction: column;
     margin: 10px;
+    padding: 0px 8%;
 }
 
 .CollapseCardStyle {
+    .rotate-button {
+        transition: transform 0.3s;
+    }
+    &.open {
+        .rotate-button {
+            transform: rotate(180deg);
+        }
+    }
     cursor: pointer;
     p {
         display: flex;
@@ -14,15 +23,31 @@
         margin-top: 20px;
         padding: 1em;
         border-radius: 5px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
     }
     .collapse-content {
+      font-family: Montserrat;
+      font-weight: 400;
       max-height: 0;
+      font-size: 18px;
       overflow: hidden;
       transition: max-height 0.3s ease;
       &.open {
-        max-height: 100px;
+        max-height: 500px;
         transition: max-height 0.3s ease;
       }
     }
   }
-  
+
+  @media (max-width: 425px) {
+    .CollapsePosition{
+      padding: 0px 0%;
+      margin: 0px;
+    }.CollapseCardStyle {
+      p {
+        font-size: 13px;
+      }
+    }
+}

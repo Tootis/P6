@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <img src={logo} alt="logo Kasa" className='LogoKasa' />
+                <img src={logo} alt="logo Kasa"/>
                 <div className='Navigation'>
                     <a href="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</a>
                     <a href="/about" className={location.pathname === '/about' ? 'active' : ''}>À Propos</a>

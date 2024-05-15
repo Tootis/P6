@@ -1,15 +1,10 @@
 import React from 'react';
 import GalleryCard from './GalleryCard'
-import './GalleryStyle.scss';
+import './GalleryCardStyle.scss';
 
 const Gallery = () => {
     return (
         <div className='GalleryPosition'>
-            <GalleryCard />
-            <GalleryCard />
-            <GalleryCard />
-            <GalleryCard />
-            <GalleryCard />
             <GalleryCard />
         </div>
     );
