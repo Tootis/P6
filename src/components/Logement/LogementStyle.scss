@@ -1,0 +1,21 @@
+.LogementDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      
+      img {
+        height: 200px;
+      }
+    }
+  }

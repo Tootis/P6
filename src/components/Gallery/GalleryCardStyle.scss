@@ -22,7 +22,7 @@
         width: 100%;
         position: relative;
         margin-bottom: 4%;
-        img {
+        .img {
             width: 100%;
             height: 340px;
             border-radius: 10px;
@@ -36,6 +36,7 @@
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 3em;
 }
 
@@ -43,7 +44,7 @@
     .Cards {
         .Card {
             max-width: 185px;
-            img {
+            .img {
                 height: 300px;
             }
         }
@@ -62,7 +63,7 @@
         margin:  0em 0px;
         .Card {
             max-width: 335px;
-            img {                
+            .img {                
                 height: 255px;
             }
         }

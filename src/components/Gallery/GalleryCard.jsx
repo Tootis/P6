@@ -1,17 +1,16 @@
 import React from 'react';
-import logements from '../../logements.json';
 import './GalleryCardStyle.scss';
-const GalleryCard = () => {
-    return (
-        <div className='Cards' >
-            {logements.map((location, index) => (
-                <div className='Card' key={index} >
-                    <div className='locationTitle'>{location.title}</div>
-                    <img src={location.cover} alt={location.title} />
-                </div>
-            ))}
-        </div>
-    );
-}
+import { Link } from 'react-router-dom';
+
+const GalleryCard = ({ id, title, cover }) => {
+  return (
+    <Link to={`/logement/${id}`}className='Cards'>
+      <div className='Card'>
+        <div className='locationTitle'>{title}</div>
+        <img className='img'src={cover} alt={title} />
+      </div>
+    </Link>
+  );
+};
 
 export default GalleryCard;
