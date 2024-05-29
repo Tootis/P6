@@ -1,7 +1,7 @@
 .CollapsePosition{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 2em 10px 10px 10px;
     padding: 0px 8%;
 }
 
@@ -20,14 +20,16 @@
         justify-content: space-between;
         background-color: #FF6060;
         color: white;
-        margin-top: 20px;
-        padding: 1em;
+        margin: 0px;
+        padding: 12px;
         border-radius: 5px;
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 700;
     }
     .collapse-content {
+      background-color: #fcfcfc;
+      margin: 1em 0px 1em 0px;
       font-family: Montserrat;
       font-weight: 400;
       max-height: 0;

@@ -1,21 +1,101 @@
 .LogementDetails {
+  padding: 20px;  
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    
-    h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 415px;
+      border-radius: 25px;
+      object-fit: cover;
     }
-    
-    .image-container {
+
+    .button-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-      
-      img {
-        height: 200px;
+      justify-content: space-between;
+      width: 100%;
+
+      .button-left, .button-right {
+        transform: rotate(-90deg);
+        background: none;
+        border: none;  
+        cursor: pointer;
+        color: white;
+      }
+
+      .button-right {
+        transform: rotate(90deg);
+      }
+
+      .fa-solid {
+        font-size: 6em;
       }
     }
   }
+  .moreInfo{
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+      font-family: Montserrat;
+      font-size: 36px;
+      font-weight: 500;
+      color: #FF6060;
+    }
+
+    p{
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .profile{
+      display: flex;
+      gap: 5%;
+
+      p{
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: right;
+        color: #FF6060;         
+      }
+
+      img{
+        border-radius: 50%;
+      }
+    }
+  }
+  .tagsRating{
+    display: flex;
+    justify-content: space-between;
+  }
+  .layout{
+    display: flex;
+    gap: 6%;
+
+    .collapse{
+      width: 50%;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+  }
+}
