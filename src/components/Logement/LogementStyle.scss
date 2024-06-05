@@ -84,12 +84,37 @@
   .tagsRating{
     display: flex;
     justify-content: space-between;
+    margin: 2em 0em;
+
+    .TagsBox{
+      display: flex;
+      gap: 1em;
+
+       .Tags{        
+        width: 115px;
+        height: 25px;
+        background-color: #FF6060;
+        color: white;
+        margin: 0px;
+        padding: 12px;
+        border-radius: 20px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+       }
+    }
+
+    .fa-star{
+      font-size: 2em;
+      padding-left: 15px;
+    }
+    
   }
   .layout{
     display: flex;
     gap: 6%;
 
-    .collapse{
+    .CollapseCardStyle{
       width: 50%;
     }
     ul {
