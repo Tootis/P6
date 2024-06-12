@@ -1,0 +1,14 @@
+.fa-star{
+    font-size: 2em;
+    padding-left: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .fa-star{
+      font-size: 1em;
+      padding-left: 6px;
+    }
+  }
+  @media(max-width: 375px){
+    
+  }

@@ -1,0 +1,61 @@
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .button-left, .button-right {
+      transform: rotate(-90deg);
+      background: none;
+      border: none;  
+      cursor: pointer;
+      color: white;
+    }
+
+    .button-right {
+      transform: rotate(90deg);
+    }
+
+    .fa-solid {
+      font-size: 6em;
+    }
+
+    .image-counter {
+        position: absolute;
+        text-align: center;
+        top: 10em;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        background:rgba(0, 0, 0, 0.2);
+    }
+    
+  }
+  @media (max-width: 768px) {
+    .button-container {
+      .fa-solid {
+        font-size: 6em;
+      }
+      .image-counter {
+        top: 4em;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .button-container {
+      .fa-solid {
+        font-size: 2em;
+      }
+      .image-counter {
+        top: 7em;
+        font-size: 13px;
+      }
+    }
+  }

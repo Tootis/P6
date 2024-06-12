@@ -5,17 +5,15 @@ const RatingStars = ({ rating }) => {
   const totalStars = 5;
 
   const ratingStars = Array.from({ length: totalStars }, (_, index) => {
-    if (index < filledStars) {
-      return <i key={index} className="fa-solid fa-star" style={{ color: '#FF6060' }}></i>;
-    } else {
-      return <i key={index} className="fa-solid fa-star" style={{ color: '#E3E3E3' }}></i>;
-    }
+    const customClass = index < filledStars ? 'full' : 'empty';
+
+    return <i key={index} className={`fa-solid fa-star ${customClass}`} style={{ color: index < filledStars ? '#FF6060' : '#E3E3E3' }}></i>;
   });
 
   return (
-    <div>
+    <>
       {ratingStars}
-    </div>
+    </>
   );
 }
 

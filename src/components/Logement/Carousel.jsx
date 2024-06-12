@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../../logements.json';
+import ImageSwitcher from './ImageSwitcher';
 
-const ButtonLeftRight = () => {
+const Carousel = () => {
     const { id } = useParams();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
     const logement = logements.find((item) => item.id === id);
 
     const nextImage = () => {
@@ -18,15 +18,18 @@ const ButtonLeftRight = () => {
 
     return (
         <div className="image-container">
+            <ImageSwitcher
+                currentImageIndex={currentImageIndex}
+                totalImages={logement.pictures.length}
+                previousImage={previousImage}
+                nextImage={nextImage}
+            />
             {logement.pictures.map((picture, index) => (
                 <img key={index} src={picture} alt={`${index + 1}`} style={{ display: index === currentImageIndex ? 'block' : 'none' }} />
-            ))}
-            <div className="button-container">
-                <button className="button-left" onClick={previousImage}><i className="fa-solid fa-chevron-up"></i></button>
-                <button className="button-right" onClick={nextImage}><i className="fa-solid fa-chevron-up"></i></button>
-            </div>
+                ))
+            }
         </div>
     );
 }
 
-export default ButtonLeftRight;
+export default Carousel;

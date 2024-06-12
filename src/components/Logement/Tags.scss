@@ -1,0 +1,21 @@
+.tagsRating{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0em;
+
+    .TagsBox{
+      display: flex;
+      gap: 1em;
+
+       .Tags{
+        background-color: #FF6060;
+        color: white;
+        margin: 0px;
+        padding: 7px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 700;
+       }
+    }
+    
+  }

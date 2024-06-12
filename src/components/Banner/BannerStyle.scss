@@ -26,7 +26,6 @@
     }
 
     .bannerText {
-        font-family: Montserrat;
         font-size: 48px;
         font-weight: 700;
         padding: 15px;
@@ -45,6 +44,7 @@
 
 @media (max-width: 425px) {
     .bannerContainer {
+        margin-bottom: 1em;
         .bannerForm {
             height: 111px;
         }

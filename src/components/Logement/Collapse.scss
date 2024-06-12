@@ -1,0 +1,40 @@
+.layout{
+    display: flex;
+    gap: 6%;
+    .CollapseCardStyle{
+      p{
+        font-size: 
+        32px;
+      }
+    }
+
+    .CollapseCardStyle{
+      width: 50%;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 1em;
+      margin: 0px;
+    }
+    
+  }
+  @media (max-width: 768px) {
+    .layout{
+      margin-top: 1em;
+      .CollapseCardStyle{
+        p{
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 375px){
+    .layout{
+      .CollapseCardStyle{
+        p{
+          font-size: 13px;
+        }
+      }
+    }
+  }
