@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../Body/MainStyle.scss';
 import '../Error/ErrorStyle.scss';
-import image from '../../404.png';
+import image from '../Img/404.png';
 
 const Error = () => {
     const location = useLocation();

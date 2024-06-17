@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../../logements.json';
-import ImageSwitcher from './ImageSwitcher';
+import ImageSwitcher from '../Logement/ImageSwitcher';
 
 const Carousel = () => {
     const { id } = useParams();
@@ -25,7 +25,7 @@ const Carousel = () => {
                 nextImage={nextImage}
             />
             {logement.pictures.map((picture, index) => (
-                <img key={index} src={picture} alt={`${index + 1}`} style={{ display: index === currentImageIndex ? 'block' : 'none' }} />
+                <img key={index} src={picture} alt={"Appartement du carousel"} style={{ display: index === currentImageIndex ? 'block' : 'none' }} />
                 ))
             }
         </div>

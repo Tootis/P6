@@ -1,7 +1,7 @@
 import React from 'react';
 import './BannerStyle.scss';
 import Banner from './Banner';
-import image from '../../imageAccueil.png';
+import image from '../Img/imageAccueil.png';
 
 const HomeBanner = () => {
     return (        

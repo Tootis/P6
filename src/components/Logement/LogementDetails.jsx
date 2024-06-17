@@ -1,16 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Carousel from './Carousel';
+import Carousel from '../Carousel/Carousel';
+import '../Carousel/Carousel.scss';
 import logements from '../../logements.json';
 import Error from '../Pages/Error';
 import CollapseCard from '../Collapse/CollapseCard';
-import RatingStars from './RatingStars';
-import Tags from './Tags';
-import './LogementStyle.scss';
-import './RatingStars.scss';
-import './Carousel.scss';
-import './Tags.scss';
 import './Collapse.scss';
+import RatingStars from '../RatingStars/RatingStars';
+import '../RatingStars/RatingStars.scss';
+import Tags from '../Tags/Tags';
+import '../Tags/Tags.scss';
+import './LogementStyle.scss';
 
 const LogementDetails = () => {
     const { id } = useParams();
