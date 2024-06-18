@@ -16,6 +16,10 @@ const Carousel = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + logement.pictures.length) % logement.pictures.length);
     };
 
+    if (logement.pictures.length === 1) {
+        return <img src={logement.pictures[0]} alt={"Appartement du carousel"} />;
+    }
+
     return (
         <div className="image-container">
             <ImageSwitcher
